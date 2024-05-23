@@ -1,8 +1,12 @@
 package com.fcfm.backend.model;
 
+import java.util.Date;
+
 public class Alumno {
 
-    private String nombre;
+    private String primerNombre;
+
+    private String segundoNombre;
 
     private String apellidoPat;
 
@@ -12,14 +16,38 @@ public class Alumno {
 
     private String email;
 
+    private String Curp;
+
     private String telefono;
 
-    public String getNombre() {
-        return nombre;
+    private Date FechaNac;
+
+    public String getprimerNombre() {
+        return primerNombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setprimerNombre(String primerNombre) {
+        this.primerNombre = primerNombre;
+    }
+
+    public String getsegundoNombre() {
+        return segundoNombre;
+    }
+
+    public void setSegundoNombre(String segundoNombre) {
+        this.segundoNombre = segundoNombre;
+    }
+
+    public String getCurp() {return Curp; }
+
+    public void setCurp(String Curp) {
+        this.Curp = Curp;
+    }
+
+    public Date getFechaNac() {return FechaNac; }
+
+    public void setFechaNac(String FechaNac) {
+        this.FechaNac = FechaNac;
     }
 
     public String getApellidoPat() {
@@ -61,6 +89,15 @@ public class Alumno {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public void setPrimerNombre(String primerNombre) {
+        this.primerNombre = primerNombre;
+    }
+
+    public String getPrimerNombre() {
+        return primerNombre;
+    }
+
 }
 
 
